@@ -10,7 +10,6 @@ body {
 main,
 header {
   padding: 1 rem;
-  m
 }
 
 img {
@@ -35,9 +34,9 @@ header nav ul li {
   float: right;
   font-size: 1.6rem;
 }
-
-/* Header style finish */
-
+/* MEDIA QUERY
+Header
+*/
 @media screen and (min-width: 725px) {
   body {
     max-width: 960px;
@@ -50,15 +49,82 @@ header nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
   }
   header nav ul li {
     display: inline;
     margin: 0.6rem;
-    font-weight:bold
+    font-weight: bold;
   }
 
   #burger-menu {
     display: none;
   }
+
+  /* Header style MQ finish */
+  /* Hero MQ start */
+  .hero {
+    display: flex;
+    padding: 1 rem;
+  }
+  .hero-info {
+    padding: 1rem;
+  }
+  .hero-info-block {
+    display: block;
+  }
+  #hero-buttons {
+    justify-content: flex-start;
+  }
+  #hero-image {
+    width: 375px;
+  }
+}
+
+/* Hero MQ end.
+
+
+
+
+
+
+
+/* Hero style phone start */
+.heroinfo h1 {
+  font-size: 3.5rem;
+  color: gray;
+  margin: 3rem 0;
+  font-weight: lighter;
+}
+
+.vegana {
+  color: aquamarine;
+}
+/* Hero style finish */
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.space {
+  display: inline-block;
+}
+
+.hero-buttons :first-child {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 5px 5px 15px orange;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15%;
+}
+
+.hero-buttons :last-child {
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.hero-Info {
+  margin: 3rem 0;
 }
