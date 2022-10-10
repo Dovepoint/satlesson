@@ -15,6 +15,28 @@ header {
 img {
   width: 100%;
 }
+.section-title {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: cursive;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.section-title span {
+  display: block;
+  color: orange;
+  margin-top: 0.5rem;
+}
+.btn {
+  background-color: aquamarine;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
 /*default all images to fill 100% of the box */
 
 /* Header style start */
@@ -34,6 +56,8 @@ header nav ul li {
   float: right;
   font-size: 1.6rem;
 }
+/* header style ends */
+
 /* MEDIA QUERY
 Header
 */
@@ -78,15 +102,22 @@ Header
   #hero-image {
     width: 375px;
   }
+  /* Hero MQ end.
+  /* specialites mq start */
+  .specialities {
+    padding: 2rem;
+    background-color: white;
+  }
+  .speciality-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  .speciality-img {
+    width: 375px;
+  }
 }
-
-/* Hero MQ end.
-
-
-
-
-
-
 
 /* Hero style phone start */
 .heroinfo h1 {
@@ -128,3 +159,66 @@ Header
 .hero-Info {
   margin: 3rem 0;
 }
+/* hero style end */
+/* Specialities style start */
+.speciality-catagory {
+  color: orange;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.speciality-catagory::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.speciality-description {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.speciality-title {
+  font-size: 2.6rem;
+  font-weight: normal;
+  display: block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.speciality-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.speciality-img {
+  box-shadow: 5px 5px 15px lightgray;
+}
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  margin-bottom: 1rem;
+}
+.speciality-item:last-child .speciality-img {
+  order: 1;
+}
+.speciality-item:last-child .speciality-info {
+  order: 2;
+}
+/* Specialities style end */
